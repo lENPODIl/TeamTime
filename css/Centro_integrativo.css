@@ -1,0 +1,787 @@
+
+.navbar {
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos generales */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 6rem;
+    color: black;
+    font-family: 'Satisfy', cursive;
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #0a0a23;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-titulo {
+  font-size: 4rem;
+  padding: 15px 0;
+  font-family: 'Satisfy', cursive;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.texto-negro {
+  color: black;
+}
+
+/* .texto-negro {
+  color: white;
+} */
+
+/* Seccion hero */
+
+.hero {
+    background-image: url(assets/image/s-day-prejudice-7723603.jpg);
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-prinsipal {
+    padding: 3rem;
+}
+
+.hero-imagen-desarollador {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.hero-prinsipal h2 {
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+/* Sobre mi */
+
+.somos-imagen {
+  height: 300px;
+  width: 300px;
+  float: right;
+}
+
+.sobre-mi {
+  height: 700px;
+  padding: 10px;
+
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: #1b1b32;
+}
+
+
+.experiencia-titulo {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges {
+  margin: 5px;
+}
+
+.fondo {
+  background-image: url(assets/image/valores.webp); 
+}
+
+.mas-info {
+    font-size: 28px;
+    color: blue;
+}
+
+/* Nuestros aliados */
+
+.testimonio-imagen {
+  height: 400px;
+  width: 400px;
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 120px;
+  width: 120px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand' sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: rgb(63, 59, 59);
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+ /*Boton de NOSOTROS*/
+
+    .btn-neon{
+        position: relative;
+        display: inline-block;
+        padding: 10px 10px;
+        /* border-radius: 10px; */
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+    .btn-neon:hover{
+        background: rgb(154, 154, 241);
+        box-shadow: 0 0 10px rgb(154, 154, 241), 0 0 40px rgb(154, 154, 241), 0 0 80px rgb(154, 154, 241);
+        transition-delay: 1s;
+     }
+    .btn-neon span{
+        position: absolute;
+        display: block;
+    }
+    
+    #span1{
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent,rgb(154, 154, 241));
+     }
+
+     .btn-neon:hover #span1{
+        left: 100%;
+        transition: 1s;
+    }
+
+     #span3{
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent,rgb(154, 154, 241));
+    }
+
+    .btn-neon:hover #span3{
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+    }
+    #span2{
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent,rgb(154, 154, 241));
+    }
+    .btn-neon:hover #span2{
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+    }
+    #span4{
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent,rgb(154, 154, 241));
+    }
+    .btn-neon:hover #span4{
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: 0.75s;
+    }
+
+
+/*Boton de CENTRO INTEGRATIVO*/
+
+
+.Centro-integrativo{
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    /* border-radius: 10px; */
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.Centro-integrativo:hover{
+    background: rgb(216, 157, 216);
+    box-shadow: 0 0 10px rgb(216, 157, 216), 0 0 40px rgb(216, 157, 216), 0 0 80px rgb(216, 157, 216);
+    transition-delay: 1s;
+ }
+.Centro-integrativo span{
+    position: absolute;
+    display: block;
+}
+#span11{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,rgb(216, 157, 216));
+ }
+ .Centro-integrativo:hover #span11{
+    left: 100%;
+    transition: 1s;
+}
+ #span33{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,rgb(216, 157, 216));
+}
+ .Centro-integrativo:hover #span33{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span22{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(216, 157, 216));
+}
+.Centro-integrativo:hover #span22{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span44{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(216, 157, 216));
+}
+.Centro-integrativo:hover #span44{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/*Boton de PROYECTOS*/
+
+
+.proyectos{
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    /* border-radius: 10px; */
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.proyectos:hover{
+    background: rgb(134, 60, 134);
+    box-shadow: 0 0 10px rgb(134, 60, 134), 0 0 40px rgb(134, 60, 134), 0 0 80px rgb(134, 60, 134);
+    transition-delay: 1s;
+ }
+.proyectos span{
+    position: absolute;
+    display: block;
+}
+#span111{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,rgb(134, 60, 134));
+ }
+ .proyectos:hover #span111{
+    left: 100%;
+    transition: 1s;
+}
+ #span333{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,rgb(134, 60, 134));
+}
+ .proyectos:hover #span333{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span222{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(134, 60, 134));
+}
+.proyectos:hover #span222{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span444{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(134, 60, 134));
+}
+.proyectos:hover #span444{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/*Boton de AYUDAR*/
+
+
+.ayudar{
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    /* border-radius: 10px; */
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.ayudar:hover{
+    background: rgb(154, 154, 241);
+    box-shadow: 0 0 10px rgb(154, 154, 241), 0 0 40px rgb(154, 154, 241), 0 0 80px rgb(154, 154, 241);
+    transition-delay: 1s;
+ }
+.ayudar span{
+    position: absolute;
+    display: block;
+}
+#span1111{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,rgb(154, 154, 241));
+ }
+ .ayudar:hover #span1111{
+    left: 100%;
+    transition: 1s;
+}
+ #span3333{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,rgb(154, 154, 241));
+}
+ .ayudar:hover #span3333{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2222{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(154, 154, 241));
+}
+.ayudar:hover #span2222{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4444{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(154, 154, 241));
+}
+.ayudar:hover #span4444{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/*oton de INFORMES*/
+
+.informes{
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    /* border-radius: 10px; */
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.informes:hover{
+    background: rgb(216, 157, 216);
+    box-shadow: 0 0 10px rgb(216, 157, 216), 0 0 40px rgb(216, 157, 216), 0 0 80px rgb(216, 157, 216);
+    transition-delay: 1s;
+ }
+.informes span{
+    position: absolute;
+    display: block;
+}
+#span11111{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,rgb(216, 157, 216));
+ }
+ .informes:hover #span11111{
+    left: 100%;
+    transition: 1s;
+}
+ #span33333{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,rgb(216, 157, 216));
+}
+ .informes:hover #span33333{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span22222{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(216, 157, 216));
+}
+.informes:hover #span22222{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span44444{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(216, 157, 216));
+}
+.informes:hover #span44444{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/*Boton de CONTACTO*/
+
+.contacto{
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    /* border-radius: 10px; */
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.contacto:hover{
+    background: rgb(134, 60, 134);
+    box-shadow: 0 0 10px rgb(134, 60, 134), 0 0 40px rgb(134, 60, 134), 0 0 80px rgb(134, 60, 134);
+    transition-delay: 1s;
+ }
+.contacto span{
+    position: absolute;
+    display: block;
+}
+#span5{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,rgb(134, 60, 134));
+ }
+ .contacto:hover #span5{
+    left: 100%;
+    transition: 1s;
+}
+ #span7{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,rgb(134, 60, 134));
+}
+ .contacto:hover #span7{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span6{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(134, 60, 134));
+}
+.contacto:hover #span6{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span8{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(134, 60, 134));
+}
+.contacto:hover #span8{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/*Boton de DONAR*/
+
+.donar{
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    /* border-radius: 10px; */
+    color: white;
+    text-decoration: none;
+    text-shadow: 4px 4px 10px black; 
+    text-align: center;
+    font-size: 45px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.donar-color{
+    font-size: 60px;
+    margin: 0%;
+}
+
+.donar:hover{
+    background: #ff00ff;
+    box-shadow: 0 0 10px #ffcf26, 0 0 40px #ff00ff, 0 0 80px #00ff00;
+    transition-delay: 1s;
+ }
+.donar span{
+    position: absolute;
+    display: block;
+}
+#span55{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#ffcf26);
+ }
+ .donar:hover #span55{
+    left: 100%;
+    transition: 1s;
+}
+ #span77{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#3929f1);
+}
+ .donar:hover #span77{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span66{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#eb22cb);
+}
+.donar:hover #span66{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span88{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#21fcc7);
+}
+.donar:hover #span88{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/* lineas */
+
+.linea{
+  background: #550b51;
+  height: 5px;
+  width: 100%;
+  display: block;
+}
+
+/* Adaptable (responsivo) */
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+      height: 120px;
+      width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+      font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 757px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+
